@@ -10,22 +10,26 @@ public class ex02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scn = new Scanner (System.in) ;
-		System.out.print("輸入 m =");
-		long m = scn.nextInt () ;
-		System.out.print("輸入 n =");
-		long n = scn.nextInt () ;
-		fun1(m, n);
+		Scanner scn = new Scanner ( System.in ) ;
+		System.out.print ( "輸入 m =" ) ;
+		int m = scn.nextInt () ;
+		System.out.print ( "輸入 n =" ) ;
+		int n = scn.nextInt () ;
+		fun1( m , n );
 	}
-	public static void fun1( long m , long n ) {
-		long t = 1 ;
-		long u = 1 ;
-		for ( long a = m ; a > 0 ; a -- ) {
-			t = t * a ;
-		for ( long b = n ; b > 0 ; b -- ) {
-			u = u * b ;
-	}
-}
-		System.out.println(t/u);
+	public static void fun1( int m , int n ) {
+		int x = 1 ;
+		int y = 1 ;
+		int z = 1 ;
+		for ( int a = 1 ; a <= m ; a ++ ) {
+			x = x * a ;
+		}
+		for ( int b = 1 ; b <= n ; b ++ ) {
+			y = y * b ;
+		}
+		for ( int c = 1 ; c <= ( m - n ) ; c ++ ) {
+			z = z * c ;
+		}
+		System.out.println( x / ( y * z ) );
 	}
 }
